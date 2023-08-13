@@ -53,7 +53,8 @@ html {
     /*background-image: url("images/bookstore.jpg");
     background-repeat: no-repeat;
     background-position: center center; */
-    color: black
+    background-color: lightblue;
+    color: black;
 }
 
 #caption 
