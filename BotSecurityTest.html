@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Bot Security Test Project</title>
+</head>
+<body><h1>Bot Security Test</h1></body>
+<p id=results style="text-align: left;">
+Here's another cool project that I made for a Cybersecurity class that I took:
+<br><br>
+It was a group project that I did in collaboration with Liam Gomez , Zachary Mekaelian and William Oh
+<br><br>
+In it we made a python bot that can mimic human behavior and play a color clicking game by itself. The game was made from scratch in Unity and the colors are randomly generated. The goal was to see if we could tell whether a human or a bot was playing the game.
+<br><br>
+In order for the bot to quickly detect the colors on screen we used a unique method. It involves taking a screenshot of the screen and using OpenCV library functions to filter out the colors on the image and generate contour points around the red which we could use to locate its position and click it.
+<br><br>
+A bot can easily be detected if the mouse moves in a straight line, <br>
+so we came up with an algorithm to give the mouse more natural movement. We split up the path into intervals of random movement that became less random as we got closer to the square to simulate it narrowing down on the target like a human does.
+<br><br>
+In the end we were able to make a bot that can play the game in a decent time and look convincing enough to pass for a human. Although the result of the experiment was the bot was detectable. We could see which device the input was coming from and the library that we used for the mouse movement had limitations on how fast it can move from point to point and was recognizable as teleporting.
+<br><br>
+This project is very important because it shows that as technology progresses in the future, it will become harder and harder to distinguish between humans and bots, which can cause great financial loss in our computer driven economy, especially in a metaverse setting.
+<br><br>
+Github Link:
+<br>
+<a href="https://github.com/NicholasMalamud/Bot-Security-Test">https://github.com/NicholasMalamud/Bot-Security-Test</a>
+<br><br>
+</p>
+<iframe src="https://docs.google.com/file/d/1G--AYrOQWDPG9MkQgZNeEBx-aeXWeGmp/preview" frameborder="1" allowfullscreen></iframe>
+
+</body>
+

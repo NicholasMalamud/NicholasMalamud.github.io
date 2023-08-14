@@ -20,7 +20,7 @@ p{
     text-align: center;
 }
 
-#resume, #projects{
+#resume{
     margin: auto;
     background-color:white;
     size: 10px;
@@ -37,12 +37,16 @@ p{
     text-align: center;
     background-color: white;
     border: 2px solid black;
-    height:200px;
-    width:50%;
+    display: inline-block;
+    height:250px;
+    width:70%;
     position: absolute;
-    top: 350px;
-    left: 25%;
+    top: 400px;
+    left: 10%;
+    right: 10%;
     color: black;
+    overflow: auto;
+    padding: 10px; 
 }
 
 html {
@@ -63,6 +67,10 @@ html {
     vertical-align: bottom;
 }
 
+iframe {
+    width:375px;
+    height:234px
+}
 /* Styles for screens smaller than 768px (typical mobile devices) */
 @media only screen and (max-width: 768px) {
 
