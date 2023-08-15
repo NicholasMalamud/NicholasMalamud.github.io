@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id = "background">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
@@ -9,8 +9,10 @@
 <body>
   <p>
       <label><a href = "resume.pdf"> <input id ="resume" type ="button" name = "resume" value = "Resume" ></a></label>
+      <br><br><br>
   </p>
 </body>
+<body id="caption"> <h2>Projects</h2>
 <p id=results style="height: 205px; width: 50%; top: 350px">
     <br>
     <a href="FastFoodOrderingApplication.html">Fast Food Ordering Application</a><br><br>
@@ -20,6 +22,39 @@
     <a href="CheeseQuest.html">Cheese Quest</a><br><br>
 </p>
 <br><br>
-<body id="caption"> <h2>Projects</h2>
+<body>
+    <p>
+        <label><input id ="github" type ="button" name = "resume" value = "disco :)" ></a></label>
+        <br><br><br>
+    </p>
+  </body>
 </body>
 
+<script>
+    var colorlist = ["#FF0000", "#FFA500", "#FFFF00", "#00FF00", "#00FFFF", "#0000FF", "#800080", "#FF00FF"];
+    var on = false
+    document.getElementById("github").addEventListener("click", function() {
+        if(on == false)
+        {
+            on = true
+            ChangeColor(5)
+        } 
+        else
+        {
+            on = false
+        }
+    });
+
+    function ChangeColor(num)
+    {
+        if (on == false)
+            document.getElementById("background").style.backgroundColor = "lightblue" 
+        else
+        {
+            document.getElementById("background").style.backgroundColor = colorlist[num]
+            num++
+            setTimeout(() => ChangeColor(num%8) , 200)
+        }
+        
+    }
+</script>

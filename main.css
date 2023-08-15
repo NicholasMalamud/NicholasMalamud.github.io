@@ -33,14 +33,25 @@ p{
     font-weight: bold;
 }
 
+#github{
+    margin: auto;
+    background-color:white;
+    size: 5px;
+    border-radius: 50px;
+    outline: 2px solid black;
+    height:50px;
+    width:25%;
+    color:black;
+    font-size: larger;
+    font-weight: bold;
+}
+
 #results {
     text-align: center;
     background-color: white;
     border: 2px solid black;
-    display: inline-block;
     height:250px;
     width:70%;
-    position: absolute;
     top: 400px;
     left: 10%;
     right: 10%;
