@@ -24,10 +24,9 @@ p{
     margin: auto;
     background-color:white;
     size: 7px;
-    border-radius: 50px;
     outline: 2px solid black;
-    height:100px;
-    width:40%;
+    height:60px;
+    width:50%;
     color:black;
     font-size: larger;
     font-weight: bold;
