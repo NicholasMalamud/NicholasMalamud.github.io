@@ -21,15 +21,15 @@
 </p>
 
 <p id=results style="text-align: left;">
-This is an AI Machine Learning Project that can identify any digit you draw!
+This AI Python Application can identify any number you draw!
 <br><br>
-It works by training a CNN (Convolutional Neural Network) on thousands of handwritten digits. Through this process, the model learns the underlying patterns and creates the weights needed to recognize new digits with a small margin of error.
+It works by training a CNN (Convolutional Neural Network) on thousands of handwritten digits. Through this process, the model learns the underlying patterns behind them and creates the weights necessary to recognize new digits. To make training faster, I added GPU support, and implemented save/load functionality so the model doesn’t need to be retrained every time.
 <br><br>
-Since training machine learning models can take a long time, I added GPU support to speed things up. I also implemented save/load functionality with .pth files, so you don’t have to retrain the model every time you run the program. Loading the model still takes some time, but once it’s up and running, it can identify numbers almost instantly. On a server running 24/7, this would work seamlessly.
+Before the model can make predictions, the drawing gets preprocessed by converting it to grayscale, centering, resizing, and pixelizing the image. Once that’s done, it can identify any digit almost instantly.
 <br><br>
-To make the data easier to process, machine learning models often perform best with grayscaled and pixelized images. I also made it center and resize the image to make it look more like the training data. These steps are necessary for the model to be able to correctly interpret the images and make the best prediction.
+I used PyTorch for the model and training, PIL for image preprocessing, and Tkinter/matplotlib for the UI and visualization.
 <br><br>
-I find it very cool that thanks to the advancement of AI libraries, I can quickly create and run a program on my PC that demonstrates real intelligence.
+This was a fun project that gave me good hands-on experience with Machine Learning, GPU acceleration, and Image Processing.
 <br><br>
 Github Link:
 <br>
@@ -38,5 +38,6 @@ Github Link:
 </p>
 
 </body>
+
 
 
